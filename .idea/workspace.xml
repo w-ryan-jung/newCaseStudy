@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eb2a18e3-8fc9-4314-86ff-9afef73b797f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/matchit/base/server/balance/Balance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/matchit/base/server/balance/BalanceDataAccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/matchit/base/server/balance/BalanceResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/matchit/base/server/product/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/matchit/base/server/product/ProductDataAccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/matchit/base/server/product/ProductResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/matchit/base/server/stock/Stock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/matchit/base/server/stock/StockDataAccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/matchit/base/server/stock/StockResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/webassets/stock/stock.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/webassets/stock/stock.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/webassets/stock/stock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/webassets/total/total.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/webassets/total/total.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/matchit/base/server/database/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/matchit/base/server/database/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/rest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/rest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/specs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/database/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/database/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webassets/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webassets/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webassets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webassets/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webassets/rest.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/rest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webassets/specs.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Class" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Xd1flbRPeZuWWjea5kQF9wmCeY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/webassets/stock" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.BaseServer">
+    <configuration name="BaseServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="matchit.base.server.BaseServer" />
+      <module name="CaseStudyProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="matchit.base.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateSchema" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="matchit.base.server.database.CreateSchema" />
+      <module name="CaseStudyProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="matchit.base.server.database.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Credentials" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="matchit.base.server.user.Credentials" />
+      <module name="CaseStudyProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="matchit.base.server.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BaseServer" />
+        <item itemvalue="Application.CreateSchema" />
+        <item itemvalue="Application.Credentials" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eb2a18e3-8fc9-4314-86ff-9afef73b797f" name="Default Changelist" comment="" />
+      <created>1581361262891</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581361262891</updated>
+      <workItem from="1581361266125" duration="442000" />
+      <workItem from="1581367071051" duration="5149000" />
+      <workItem from="1581374903828" duration="19656000" />
+      <workItem from="1581425886223" duration="18999000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1738" y="437" key="#com.intellij.ide.util.MemberChooser" timestamp="1581456266274">
+      <screen x="0" y="23" width="2560" height="1347" />
+    </state>
+    <state x="1738" y="443" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1440/-1080.0.1080.1920@0.0.2560.1440" timestamp="1581373708520" />
+    <state x="1738" y="437" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581456266274" />
+    <state x="1018" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581426170207">
+      <screen x="0" y="23" width="2560" height="1347" />
+    </state>
+    <state x="1018" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581426170207" />
+    <state width="2518" height="633" key="GridCell.Tab.0.bottom" timestamp="1581463376873">
+      <screen x="0" y="23" width="2560" height="1347" />
+    </state>
+    <state width="1228" height="422" key="GridCell.Tab.0.bottom/0.0.2560.1440/-1080.0.1080.1920@0.0.2560.1440" timestamp="1581374465685" />
+    <state width="2518" height="633" key="GridCell.Tab.0.bottom/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581463376873" />
+    <state width="2518" height="633" key="GridCell.Tab.0.center" timestamp="1581463376872">
+      <screen x="0" y="23" width="2560" height="1347" />
+    </state>
+    <state width="1228" height="422" key="GridCell.Tab.0.center/0.0.2560.1440/-1080.0.1080.1920@0.0.2560.1440" timestamp="1581374465683" />
+    <state width="2518" height="633" key="GridCell.Tab.0.center/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581463376872" />
+    <state width="2518" height="633" key="GridCell.Tab.0.left" timestamp="1581463376871">
+      <screen x="0" y="23" width="2560" height="1347" />
+    </state>
+    <state width="1228" height="422" key="GridCell.Tab.0.left/0.0.2560.1440/-1080.0.1080.1920@0.0.2560.1440" timestamp="1581374465682" />
+    <state width="2518" height="633" key="GridCell.Tab.0.left/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581463376871" />
+    <state width="2518" height="633" key="GridCell.Tab.0.right" timestamp="1581463376872">
+      <screen x="0" y="23" width="2560" height="1347" />
+    </state>
+    <state width="1228" height="422" key="GridCell.Tab.0.right/0.0.2560.1440/-1080.0.1080.1920@0.0.2560.1440" timestamp="1581374465684" />
+    <state width="2518" height="633" key="GridCell.Tab.0.right/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581463376872" />
+    <state x="1585" y="330" width="670" height="676" key="search.everywhere.popup" timestamp="1581404681961">
+      <screen x="0" y="23" width="2560" height="1347" />
+    </state>
+    <state x="1585" y="330" width="670" height="676" key="search.everywhere.popup/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581404681961" />
+  </component>
+</project>
