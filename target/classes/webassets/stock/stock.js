@@ -1,10 +1,11 @@
 var base = base || {};
 
 base.stockController = function() {
+
     'use strict' // add this to avoid some potential bugs
 
-    // List of all foo data, will be useful to have when update functionality is added in lab 2.
     let model = [];
+
     let table =  $("#dataTable").DataTable({
         lengthChange: false,
         searching: false,
@@ -17,45 +18,26 @@ base.stockController = function() {
 
         const viewModel = this;
 
-        this.render = function(template) {
-            this.update(template.content.querySelector('tr'));
-            const clone = document.importNode(template.content, true);
-            template.parentElement.appendChild(clone);
-        };
-
-        this.update = function(trElement) {
-            const tds = trElement.children;
-            tds[0].textContent = viewModel.stock.locationName;
-            tds[1].textContent = viewModel.stock.productName;
-            tds[2].textContent = viewModel.stock.amount;
-            const d = viewModel.stock.date;
-            tds[3].textContent = d.toLocaleDateString();
-        };
-
-        this.drawTable = function () {
+        this.drawTable = function (callback) {
             let data = [viewModel.stock.locationName,
                         viewModel.stock.productName,
                         viewModel.stock.amount,
                         viewModel.stock.date.toDateString()];
             table.row.add(data).draw();
+            if(typeof callback === 'function'){
+                table.page('last').draw(false);
+                table.order([3,desc]).draw();
+            }
         }
 
     };
 
     const view = {
 
-        render: function() {
-            const t = this.template();
-            model.forEach(d => d.render(t));
+        draw: function(callback){
+            model.forEach(d => d.drawTable(callback))  ;
         },
 
-        draw: function(){
-            model.forEach(d => d.drawTable())  ;
-        },
-
-        template: function() {
-            return document.getElementById('stock-template');
-        }
     };
 
     const controller = {
@@ -94,27 +76,10 @@ base.stockController = function() {
                     }
                     const vm = new StockModel(stock);
                     model.push(vm);          // append the foo to the end of the model array
-                    vm.drawTable();
-
-                    alert("It has been updated now");
+                    vm.drawTable(function () {});
                 });
         }
     };
-
-    // $("#dataTable").DataTable({
-    //     lengthChange: false,
-    //     searching: false,
-    //
-    //     data:stocks,
-    //     columns: [
-    //         { data: "locationName" },
-    //         { data: "productName" },
-    //         { data: "amount" },
-    //         { data: "date",render:function (data) {
-    //                 return data.toLocaleString();
-    //             }}
-    //     ]
-    // });
 
     return controller;
 };
