@@ -7,6 +7,14 @@ base.rest = (function() {
     // itself using the JSON object with Object.assign.
     // In this way, we don't have to write: this.id = json.id; this.payload = json.payload etc.
 
+    const Location = function (json) {
+        Object.assign(this,json);
+    };
+
+    const Product = function (json) {
+        Object.assign(this,json);
+    };
+
     const Total = function (json) {
         Object.assign(this,json);
     };
@@ -39,6 +47,8 @@ base.rest = (function() {
     base.Total = Total;
     base.User = User;
     base.Role = Role;
+    base.Product = Product;
+    base.Location = Location;
 
     // This method extends the functionality of fetch by adding default error handling.
     // Using it is entirely optional.
@@ -207,6 +217,65 @@ base.rest = (function() {
                 .then(response => response.json())
                 .then(total => total.map(t => new Total(t)));
         },
+
+        getTotalByLocation: function(location){
+            return baseFetch('/rest/total/location/' + location)
+                .then(response => response.json())
+                .then(total => total.map(t => new Total(t)));
+        },
+
+        getTotalByProduct: function(product){
+            return baseFetch('/rest/total/product/' + product)
+                .then(response => response.json())
+                .then(total => total.map(t => new Total(t)));
+        },
+
+        getProducts: function(){
+            return baseFetch('/rest/product')
+                .then(response => response.json())
+                .then(products => products.map(p => new Product(p)));
+        },
+
+        deleteProduct: function(product){
+            return baseFetch('/rest/product/'+product, {method: 'DELETE'});
+        },
+        updateProduct: function(){
+
+        },
+        addProduct: function(product){
+            let result = baseFetch('/rest/product', {
+                method: 'POST',
+                body: JSON.stringify(product),
+                headers: jsonHeader})
+                .then(response => response.json())
+                .then(p => new Product(p));
+            return result;
+        },
+
+
+        getLocations: function(){
+            return baseFetch('/rest/location')
+                .then(response => response.json())
+                .then(locations => locations.map(l => new Location(l)));
+        },
+        addLocation: function(location){
+            let result = baseFetch('/rest/location', {
+                method: 'POST',
+                body: JSON.stringify(location),
+                headers: jsonHeader})
+                .then(response => response.json())
+                .then(l => new Location(l));
+            return result;
+        },
+
+        deleteLocation: function(location){
+            return baseFetch('/rest/location/'+location, {method: 'DELETE'});
+
+        },
+        updateLocation: function(){
+
+        },
+
 
         /*
          * Deletes foo with specific integer id

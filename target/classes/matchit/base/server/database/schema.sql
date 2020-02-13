@@ -31,13 +31,15 @@ INSERT INTO user (role_id, username, salt, password_hash)
 -- Example table containing some data per user, you are expected to remove this table in your project.
 
 CREATE TABLE product(
-    product_name VARCHAR(20),
+    product_id INT AUTO_INCREMENT NOT NULL,
+    product_name VARCHAR(20) UNIQUE,
     price INT NOT NULL,
     PRIMARY KEY(product_name)
 );
 
 CREATE TABLE location(
-    location_name VARCHAR(20),
+    location_id INT AUTO_INCREMENT NOT NULL,
+    location_name VARCHAR(20) UNIQUE,
     PRIMARY KEY(location_name)
 );
 

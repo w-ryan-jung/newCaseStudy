@@ -1,4 +1,4 @@
-package matchit.base.server.product;
+package matchit.base.server.location;
 
 import matchit.base.server.Config;
 import matchit.base.server.user.Role;
@@ -11,45 +11,43 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
-@Path("product")
-public class ProductResource {
-
-    private final ProductDataAccess productDataAccess = new ProductDataAccess(Config.instance().getDatabaseDriver());
+@Path("location")
+public class LocationResource {
+    private final LocationDataAccess locationDataAccess = new LocationDataAccess(Config.instance().getDatabaseDriver());
 
     private final User user;
 
-    public ProductResource(@Context ContainerRequestContext context) {
+    public LocationResource(@Context ContainerRequestContext context) {
         this.user = (User) context.getProperty(User.class.getSimpleName());
     }
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON + ";charset=utf-8")
     @RolesAllowed(Role.Names.ADMIN)
-    public Product addProduct(Product product){
-        return productDataAccess.addProduct(product.getProductName(), product.getPrice());
+    public Location addLocation(Location location){
+        return locationDataAccess.addLocation(location.getLocationName());
     }
 
     @GET
     @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
     @RolesAllowed(Role.Names.ADMIN)
-    public List<Product> getProducts(){
-        return productDataAccess.getProducts();
+    public List<Location> getLocations(){
+        return locationDataAccess.getLocations();
     }
 
     @PUT
     @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
     @RolesAllowed(Role.Names.ADMIN)
-    @Path("{product}")
-    public boolean updateProduct(@PathParam("product") String product){
-        return productDataAccess.updateProduct(product);
+    @Path("{location}")
+    public boolean updateLocation(@PathParam("location") String location){
+        return locationDataAccess.updateLocation(location);
     }
 
     @DELETE
     @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
     @RolesAllowed(Role.Names.ADMIN)
-    @Path("{product}")
-    public boolean deleteProduct(@PathParam("product") String product){
-        return productDataAccess.deleteProduct(product);
+    @Path("{location}")
+    public boolean deleteLocation(@PathParam("location") String location){
+        return locationDataAccess.deleteLocation(location);
     }
-
 }

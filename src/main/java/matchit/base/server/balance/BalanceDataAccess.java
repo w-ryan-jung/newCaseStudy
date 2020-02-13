@@ -24,10 +24,12 @@ public class BalanceDataAccess extends DataAccess<Balance> {
     }
 
     public List<Balance> getTotalByLocation(String location){
+        System.out.println(location);
         return query("select location_name, product_name, sum(amount) as total from stock group by location_name, product_name having location_name = ?",location);
     }
 
     public List<Balance> getTotalByProduct(String product){
+        System.out.println(product);
         return query("select location_name, product_name, sum(amount) as total from stock group by location_name, product_name having product_name = ?",product);
     }
 

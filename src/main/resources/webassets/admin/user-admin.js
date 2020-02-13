@@ -6,13 +6,70 @@ base.userAdminController = function() {
         selectedUser: {},
         users: [],
         roles: [],
-        roleNames: []
+        roleNames: [],
+        products:[],
+        locations:[]
+    };
+
+    let productTable =  $("#ProductTable").DataTable({
+        lengthChange: false,
+        searching: false,
+        paging: false,
+        ordering: false,
+        info: false
+    });
+
+    let locationTable =  $("#LocationTable").DataTable({
+        lengthChange: false,
+        searching: false,
+        paging: false,
+        ordering: false,
+        info: false
+    });
+
+    const ProductModel = function(_product) {
+
+        this.product = _product;
+
+        const viewModel = this;
+
+        this.drawTable = function () {
+            let data = [viewModel.product.productName,
+                viewModel.product.price];
+            productTable.row.add(data).draw();
+        }
+
+    };
+
+    const LocationModel = function(_location) {
+
+        this.location = _location;
+
+        const viewModel = this;
+
+        this.drawTable = function () {
+            let data = [viewModel.location.locationName];
+            locationTable.row.add(data).draw();
+        }
+    };
+
+    const view = {
+
+        drawProduct: function(){
+            model.products.forEach(p => p.drawTable());
+        },
+
+        drawLocaiton: function () {
+            model.locations.forEach(l => l.drawTable());
+        }
+
     };
 
     // Every user has one of these
     const UserViewModel = function(_user) {
 
         this.user = _user;
+
         const viewModel = this;
 
         this.renderListElement = function() {
@@ -57,7 +114,7 @@ base.userAdminController = function() {
                 .forEach(activeEl => activeEl.classList.remove('active'));
             viewModel.listElement.classList.add('active');
 
-            document.getElementById('user-data').querySelector('a').href = '/rest/foo/user/'+viewModel.user.id;
+            document.getElementById('user-data').querySelector('a').href = '/rest/stock/user/'+viewModel.user.id;
 
             // Set defaults of form values. This will allow the HTML reset button to work by default HTML behaviour.
             document.getElementById('user-id').defaultValue = viewModel.user.id;
@@ -101,6 +158,7 @@ base.userAdminController = function() {
             }
             return false;
         };
+
     };
 
     const controller = {
@@ -126,6 +184,54 @@ base.userAdminController = function() {
                 contr.select();
             };
 
+
+            document.getElementById("add-product").onclick = function(event){
+                const product = document.getElementById("product").value;
+                const price = document.getElementById("price").value;
+                base.rest.addProduct({"productName": product, "price": price})
+                    .then(function (product) {
+                        const p = new ProductModel(product);
+                        model.products.push(p);
+                        p.drawTable();
+                    });
+            };
+
+            document.getElementById("add-location").onclick = function(event){
+                const location = document.getElementById("location").value;
+                base.rest.addLocation({"locationName": location})
+                    .then(function (location) {
+                        const l = new LocationModel(location);
+                        model.products.push(l);
+                        l.drawTable();
+                    });
+            };
+            document.getElementById("delete-product").onclick = function(event){
+                const product = document.getElementById("product").value;
+                base.rest.deleteProduct(product)
+                    .then(function () {
+                        productTable.clear().draw();
+                        base.rest.getProducts()
+                            .then(function(products) {
+                                model.products = products.map(product => new ProductModel(product));
+                                view.drawProduct();
+                            });
+                    });
+
+            };
+
+            document.getElementById("delete-location").onclick = function(event){
+                const location = document.getElementById("location").value;
+                base.rest.deleteLocation(location)
+                    .then(function () {
+                        locationTable.clear().draw();
+                        base.rest.getLocations()
+                            .then(function(locations) {
+                                model.locations = locations.map(location => new LocationModel(location));
+                                view.drawLocaiton();
+                            });
+                    });
+            };
+
             // Promise.all joins two promises so they can fetch in parallell but pause until both are done.
             Promise.all([base.rest.getUsers(), base.rest.getRoles()])
             .then(function(values) {
@@ -147,7 +253,24 @@ base.userAdminController = function() {
 
                 model.users[0].select();
             });
+
+
+
+            base.rest.getProducts()
+                .then(function(products) {
+                    model.products = products.map(product => new ProductModel(product));
+                    view.drawProduct();
+                });
+
+            base.rest.getLocations()
+                .then(function(locations) {
+                    model.locations = locations.map(location => new LocationModel(location));
+                    view.drawLocaiton();
+                });
+
+
         }
+
     };
 
     return controller;

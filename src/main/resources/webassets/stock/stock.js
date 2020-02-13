@@ -12,6 +12,16 @@ base.stockController = function() {
         "pagingType": "numbers"
     });
 
+    const Option = function (option,tagname) {
+        this.makeOption = function () {
+            // Create New Option.
+            let newOption = $('<option>');
+            newOption.attr('value', option).text(option);
+            // Append that to the DropDownList.
+            $(tagname).append(newOption);
+        }
+    };
+
     const StockModel = function(_stock) {
 
         this.stock = _stock;
@@ -55,6 +65,16 @@ base.stockController = function() {
                     model = stocks.map(stock => new StockModel(stock));
                     view.draw();
                 });
+
+            base.rest.getLocations()
+                .then((function (locations) {
+                    locations.map(location => new Option(location.locationName, '#location').makeOption());
+                }));
+
+            base.rest.getProducts()
+                .then((function (products) {
+                    products.map(product => new Option(product.productName,'#product').makeOption());
+                }));
         },
 
         postStock: function() {
