@@ -2,28 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb2a18e3-8fc9-4314-86ff-9afef73b797f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/matchit/base/server/location/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/matchit/base/server/location/LocationDataAccess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/matchit/base/server/location/LocationResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/matchit/base/server/balance/BalanceDataAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/matchit/base/server/balance/BalanceDataAccess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/matchit/base/server/product/ProductDataAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/matchit/base/server/product/ProductDataAccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/matchit/base/server/balance/Balance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/matchit/base/server/total/Total.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/matchit/base/server/balance/BalanceDataAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/matchit/base/server/total/TotalDataAccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/matchit/base/server/balance/BalanceResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/matchit/base/server/total/TotalResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/matchit/base/server/location/LocationResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/matchit/base/server/location/LocationResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/matchit/base/server/product/ProductResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/matchit/base/server/product/ProductResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/matchit/base/server/database/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/matchit/base/server/database/schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/admin/user-admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/admin/user-admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/admin/user-admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/admin/user-admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/rest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/rest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/stock/stock.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/stock/stock.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/stock/stock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/stock/stock.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/total/total.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/total/total.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/total/total.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/total/total.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/balance/BalanceDataAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/balance/BalanceDataAccess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/balance/Balance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/balance/BalanceDataAccess$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/balance/BalanceDataAccess$BalanceMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/balance/BalanceDataAccess.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/balance/BalanceResource.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/database/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/database/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/product/ProductDataAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/product/ProductDataAccess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/location/LocationResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/location/LocationResource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/product/ProductResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/product/ProductResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webassets/rest.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/rest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webassets/admin/user-admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/admin/user-admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/webassets/stock/stock.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/stock/stock.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/webassets/stock/stock.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/stock/stock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webassets/total/total.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/total/total.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webassets/total/total.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/total/total.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +94,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="matchit.base.server.BaseServer" />
-      <module name="CaseStudyProject" />
+      <module name="newCaseStudy" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="matchit.base.server.location.*" />
@@ -106,7 +109,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="matchit.base.server.database.CreateSchema" />
-      <module name="CaseStudyProject" />
+      <module name="newCaseStudy" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="matchit.base.server.database.*" />
@@ -138,8 +141,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.BaseServer" />
-        <item itemvalue="Application.CreateSchema" />
         <item itemvalue="Application.Credentials" />
+        <item itemvalue="Application.CreateSchema" />
       </list>
     </recent_temporary>
   </component>
@@ -170,6 +173,7 @@
       <workItem from="1581374903828" duration="19656000" />
       <workItem from="1581425886223" duration="18999000" />
       <workItem from="1581489882937" duration="3915000" />
+      <workItem from="1581581787765" duration="6657000" />
     </task>
     <servers />
   </component>
@@ -191,46 +195,51 @@
       <screen x="0" y="23" width="1280" height="733" />
     </state>
     <state x="316" y="54" key="#Credentials/0.23.1280.733@0.23.1280.733" timestamp="1581490131444" />
-    <state x="104" y="51" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581490007834">
-      <screen x="0" y="23" width="1280" height="733" />
+    <state x="104" y="51" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581581822021">
+      <screen x="0" y="23" width="1280" height="732" />
     </state>
+    <state x="104" y="51" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.732@0.23.1280.732" timestamp="1581581822021" />
     <state x="104" y="51" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.733@0.23.1280.733" timestamp="1581490007834" />
     <state x="1738" y="437" key="#com.intellij.ide.util.MemberChooser" timestamp="1581537721759">
       <screen x="0" y="23" width="2560" height="1347" />
     </state>
     <state x="1738" y="443" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1440/-1080.0.1080.1920@0.0.2560.1440" timestamp="1581373708520" />
     <state x="1738" y="437" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581537721759" />
+    <state x="199" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581594414433">
+      <screen x="0" y="23" width="1280" height="732" />
+    </state>
+    <state x="199" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.732@0.23.1280.732" timestamp="1581594414433" />
     <state x="1018" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581426170207">
       <screen x="0" y="23" width="2560" height="1347" />
     </state>
     <state x="1018" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581426170207" />
-    <state width="2518" height="633" key="GridCell.Tab.0.bottom" timestamp="1581554591633">
-      <screen x="0" y="23" width="2560" height="1347" />
+    <state width="1238" height="181" key="GridCell.Tab.0.bottom" timestamp="1581602975458">
+      <screen x="0" y="23" width="1280" height="733" />
     </state>
     <state width="1228" height="422" key="GridCell.Tab.0.bottom/0.0.2560.1440/-1080.0.1080.1920@0.0.2560.1440" timestamp="1581374465685" />
-    <state width="1238" height="182" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1581533977330" />
-    <state width="1238" height="182" key="GridCell.Tab.0.bottom/0.23.1280.733@0.23.1280.733" timestamp="1581533814154" />
+    <state width="1238" height="181" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1581594959941" />
+    <state width="1238" height="181" key="GridCell.Tab.0.bottom/0.23.1280.733@0.23.1280.733" timestamp="1581602975458" />
     <state width="2518" height="633" key="GridCell.Tab.0.bottom/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581554591633" />
-    <state width="2518" height="633" key="GridCell.Tab.0.center" timestamp="1581554591632">
-      <screen x="0" y="23" width="2560" height="1347" />
+    <state width="1238" height="181" key="GridCell.Tab.0.center" timestamp="1581602975455">
+      <screen x="0" y="23" width="1280" height="733" />
     </state>
     <state width="1228" height="422" key="GridCell.Tab.0.center/0.0.2560.1440/-1080.0.1080.1920@0.0.2560.1440" timestamp="1581374465683" />
-    <state width="1238" height="182" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1581533977330" />
-    <state width="1238" height="182" key="GridCell.Tab.0.center/0.23.1280.733@0.23.1280.733" timestamp="1581533814153" />
+    <state width="1238" height="181" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1581594959940" />
+    <state width="1238" height="181" key="GridCell.Tab.0.center/0.23.1280.733@0.23.1280.733" timestamp="1581602975455" />
     <state width="2518" height="633" key="GridCell.Tab.0.center/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581554591632" />
-    <state width="2518" height="633" key="GridCell.Tab.0.left" timestamp="1581554591631">
-      <screen x="0" y="23" width="2560" height="1347" />
+    <state width="1238" height="181" key="GridCell.Tab.0.left" timestamp="1581602975455">
+      <screen x="0" y="23" width="1280" height="733" />
     </state>
     <state width="1228" height="422" key="GridCell.Tab.0.left/0.0.2560.1440/-1080.0.1080.1920@0.0.2560.1440" timestamp="1581374465682" />
-    <state width="1238" height="182" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1581533977329" />
-    <state width="1238" height="182" key="GridCell.Tab.0.left/0.23.1280.733@0.23.1280.733" timestamp="1581533814152" />
+    <state width="1238" height="181" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1581594959940" />
+    <state width="1238" height="181" key="GridCell.Tab.0.left/0.23.1280.733@0.23.1280.733" timestamp="1581602975455" />
     <state width="2518" height="633" key="GridCell.Tab.0.left/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581554591631" />
-    <state width="2518" height="633" key="GridCell.Tab.0.right" timestamp="1581554591632">
-      <screen x="0" y="23" width="2560" height="1347" />
+    <state width="1238" height="181" key="GridCell.Tab.0.right" timestamp="1581602975457">
+      <screen x="0" y="23" width="1280" height="733" />
     </state>
     <state width="1228" height="422" key="GridCell.Tab.0.right/0.0.2560.1440/-1080.0.1080.1920@0.0.2560.1440" timestamp="1581374465684" />
-    <state width="1238" height="182" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1581533977330" />
-    <state width="1238" height="182" key="GridCell.Tab.0.right/0.23.1280.733@0.23.1280.733" timestamp="1581533814153" />
+    <state width="1238" height="181" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1581594959941" />
+    <state width="1238" height="181" key="GridCell.Tab.0.right/0.23.1280.733@0.23.1280.733" timestamp="1581602975457" />
     <state width="2518" height="633" key="GridCell.Tab.0.right/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581554591632" />
     <state x="1585" y="330" width="670" height="676" key="search.everywhere.popup" timestamp="1581404681961">
       <screen x="0" y="23" width="2560" height="1347" />

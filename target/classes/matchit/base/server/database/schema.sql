@@ -78,3 +78,5 @@ CREATE TABLE balance(
     FOREIGN KEY(product_name) REFERENCES product(product_name)
 );
 
+
+

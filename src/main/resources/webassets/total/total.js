@@ -89,7 +89,7 @@ base.totalController = function() {
             $("#product").change(function () {
                 console.log(this.value);
 
-                if(this.value === 'Location'){
+                if(this.value === 'Product'){
                     return
                 }else if(this.value === 'All'){
                     base.rest.getTotal()

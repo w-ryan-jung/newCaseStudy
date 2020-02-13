@@ -1,4 +1,4 @@
-package matchit.base.server.balance;
+package matchit.base.server.total;
 
 import matchit.base.server.Config;
 import matchit.base.server.user.Role;
@@ -11,13 +11,13 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
-@Path("total/")
-public class BalanceResource {
-    private final BalanceDataAccess balanceDataAccess = new BalanceDataAccess(Config.instance().getDatabaseDriver());
+@Path("total")
+public class TotalResource {
+    private final TotalDataAccess totalDataAccess = new TotalDataAccess(Config.instance().getDatabaseDriver());
 
     private final User user;
 
-    public BalanceResource(@Context ContainerRequestContext context) {
+    public TotalResource(@Context ContainerRequestContext context) {
         this.user = (User) context.getProperty(User.class.getSimpleName());
     }
 
@@ -26,9 +26,9 @@ public class BalanceResource {
     @RolesAllowed(Role.Names.USER)
     @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
     @Consumes(MediaType.APPLICATION_JSON + ";charset=utf-8")
-    public List<Balance> getTotalByLocation(@PathParam("location") String location){
+    public List<Total> getTotalByLocation(@PathParam("location") String location){
         System.out.println(location);
-        return balanceDataAccess.getTotalByLocation(location);
+        return totalDataAccess.getTotalByLocation(location);
     }
 
     @GET
@@ -36,15 +36,15 @@ public class BalanceResource {
     @RolesAllowed(Role.Names.USER)
     @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
     @Consumes(MediaType.APPLICATION_JSON + ";charset=utf-8")
-    public List<Balance> getTotalByProduct(@PathParam("product") String product){
-        return balanceDataAccess.getTotalByProduct(product);
+    public List<Total> getTotalByProduct(@PathParam("product") String product){
+        return totalDataAccess.getTotalByProduct(product);
     }
 
     @GET
     @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
     @RolesAllowed(Role.Names.USER)
-    public List<Balance> getTotal(){
-        return balanceDataAccess.getTotal();
+    public List<Total> getTotal(){
+        return totalDataAccess.getTotal();
     }
 
 }

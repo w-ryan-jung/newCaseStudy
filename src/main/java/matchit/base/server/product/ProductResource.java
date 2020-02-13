@@ -24,21 +24,21 @@ public class ProductResource {
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON + ";charset=utf-8")
-    @RolesAllowed(Role.Names.ADMIN)
+    @RolesAllowed(Role.Names.USER)
     public Product addProduct(Product product){
         return productDataAccess.addProduct(product.getProductName(), product.getPrice());
     }
 
     @GET
     @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
-    @RolesAllowed(Role.Names.ADMIN)
+    @RolesAllowed(Role.Names.USER)
     public List<Product> getProducts(){
         return productDataAccess.getProducts();
     }
 
     @PUT
     @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
-    @RolesAllowed(Role.Names.ADMIN)
+    @RolesAllowed(Role.Names.USER)
     @Path("{product}")
     public boolean updateProduct(@PathParam("product") String product){
         return productDataAccess.updateProduct(product);
@@ -46,7 +46,7 @@ public class ProductResource {
 
     @DELETE
     @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
-    @RolesAllowed(Role.Names.ADMIN)
+    @RolesAllowed(Role.Names.USER)
     @Path("{product}")
     public boolean deleteProduct(@PathParam("product") String product){
         return productDataAccess.deleteProduct(product);

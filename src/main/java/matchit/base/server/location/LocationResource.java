@@ -23,21 +23,21 @@ public class LocationResource {
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON + ";charset=utf-8")
-    @RolesAllowed(Role.Names.ADMIN)
+    @RolesAllowed(Role.Names.USER)
     public Location addLocation(Location location){
         return locationDataAccess.addLocation(location.getLocationName());
     }
 
     @GET
     @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
-    @RolesAllowed(Role.Names.ADMIN)
+    @RolesAllowed(Role.Names.USER)
     public List<Location> getLocations(){
         return locationDataAccess.getLocations();
     }
 
     @PUT
     @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
-    @RolesAllowed(Role.Names.ADMIN)
+    @RolesAllowed(Role.Names.USER)
     @Path("{location}")
     public boolean updateLocation(@PathParam("location") String location){
         return locationDataAccess.updateLocation(location);
@@ -45,7 +45,7 @@ public class LocationResource {
 
     @DELETE
     @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
-    @RolesAllowed(Role.Names.ADMIN)
+    @RolesAllowed(Role.Names.USER)
     @Path("{location}")
     public boolean deleteLocation(@PathParam("location") String location){
         return locationDataAccess.deleteLocation(location);

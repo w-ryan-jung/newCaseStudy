@@ -9,7 +9,8 @@ base.stockController = function() {
     let table =  $("#dataTable").DataTable({
         lengthChange: false,
         searching: false,
-        "pagingType": "numbers"
+        "pagingType": "numbers",
+        "order": [[ 3, "desc" ]]
     });
 
     const Option = function (option,tagname) {
@@ -35,8 +36,9 @@ base.stockController = function() {
                         viewModel.stock.date.toDateString()];
             table.row.add(data).draw();
             if(typeof callback === 'function'){
+                table.order([3,"desc"]).draw();
                 table.page('last').draw(false);
-                table.order([3,desc]).draw();
+                document.getElementById('dataTable').scrollIntoView();
             }
         }
 

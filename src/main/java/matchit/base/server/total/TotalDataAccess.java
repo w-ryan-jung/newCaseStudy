@@ -1,4 +1,4 @@
-package matchit.base.server.balance;
+package matchit.base.server.total;
 
 import matchit.base.server.database.DataAccess;
 import matchit.base.server.database.Mapper;
@@ -7,33 +7,33 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
-public class BalanceDataAccess extends DataAccess<Balance> {
+public class TotalDataAccess extends DataAccess<Total> {
 
-    private static final class BalanceMapper implements Mapper<Balance> {
+    private static final class BalanceMapper implements Mapper<Total> {
 
         @Override
-        public Balance map(ResultSet resultSet) throws SQLException {
-            return new Balance(resultSet.getString("location_name"),
+        public Total map(ResultSet resultSet) throws SQLException {
+            return new Total(resultSet.getString("location_name"),
                     resultSet.getString("product_name"),
                     resultSet.getInt("total"));
         }
     }
 
-    public BalanceDataAccess(String driverUrl){
+    public TotalDataAccess(String driverUrl){
         super(driverUrl, new BalanceMapper());
     }
 
-    public List<Balance> getTotalByLocation(String location){
+    public List<Total> getTotalByLocation(String location){
         System.out.println(location);
         return query("select location_name, product_name, sum(amount) as total from stock group by location_name, product_name having location_name = ?",location);
     }
 
-    public List<Balance> getTotalByProduct(String product){
+    public List<Total> getTotalByProduct(String product){
         System.out.println(product);
         return query("select location_name, product_name, sum(amount) as total from stock group by location_name, product_name having product_name = ?",product);
     }
 
-    public List<Balance> getTotal(){
+    public List<Total> getTotal(){
         return query("SELECT location_name, product_name, SUM(amount) AS total " +
                 "FROM stock " +
                 "GROUP BY location_name, product_name " +
