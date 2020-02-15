@@ -21,13 +21,20 @@ public class TotalResource {
         this.user = (User) context.getProperty(User.class.getSimpleName());
     }
 
+    @POST
+    @RolesAllowed(Role.Names.USER)
+    @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
+    @Consumes(MediaType.APPLICATION_JSON + ";charset=utf-8")
+    public List<Total> getStocksBy(Total item){
+        return totalDataAccess.getStocksBy(item);
+    }
+
     @GET
     @Path("location/{location}")
     @RolesAllowed(Role.Names.USER)
     @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
     @Consumes(MediaType.APPLICATION_JSON + ";charset=utf-8")
     public List<Total> getTotalByLocation(@PathParam("location") String location){
-        System.out.println(location);
         return totalDataAccess.getTotalByLocation(location);
     }
 

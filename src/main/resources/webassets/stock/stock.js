@@ -10,7 +10,6 @@ base.stockController = function() {
         lengthChange: false,
         searching: false,
         "pagingType": "numbers",
-        "order": [[ 3, "desc" ]]
     });
 
     const Option = function (option,tagname) {
@@ -29,78 +28,112 @@ base.stockController = function() {
 
         const viewModel = this;
 
-        this.drawTable = function (callback) {
+        this.drawTable = function () {
             let data = [viewModel.stock.locationName,
                         viewModel.stock.productName,
-                        viewModel.stock.amount,
-                        viewModel.stock.date.toDateString()];
+                        viewModel.stock.total];
+
             table.row.add(data).draw();
-            if(typeof callback === 'function'){
-                table.order([3,"desc"]).draw();
-                table.page('last').draw(false);
-                document.getElementById('dataTable').scrollIntoView();
-            }
         }
 
     };
 
     const view = {
-
-        draw: function(callback){
-            model.forEach(d => d.drawTable(callback))  ;
+        draw: function(){
+            model.forEach(d => d.drawTable())  ;
         },
-
     };
 
     const controller = {
 
+        request: function() {
+            let location = document.getElementById('location').value;
+            let product = document.getElementById('product').value;
+            let item = {"locationName":location,"productName":product};
+            base.rest.getStocksBy(item)
+                .then(function (stocks) {
+                    if(stocks.length > 0){
+                        table.clear().draw();
+                        controller.drawData(stocks);
+                    }else{
+                        alert("No data");
+                    }
+
+                });
+        },
+
         load: function() {
 
-            document.getElementById('form').onsubmit = function(event) {
-                event.preventDefault();
-                controller.postStock();
-                return false;
-            };
+            // all
+            base.rest.getTotal()
+                .then(function (stocks) {controller.drawData(stocks)});
 
-            base.rest.getStocks()
-                .then(function(stocks) {
-                    model = stocks.map(stock => new StockModel(stock));
-                    view.draw();
-                });
+            // by location
+            $("#location").change(function () {
+                controller.request();
+            });
 
+            // by product
+            $("#product").change(function () {
+                controller.request();
+            });
+
+
+            // location select list
             base.rest.getLocations()
                 .then((function (locations) {
                     locations.map(location => new Option(location.locationName, '#location').makeOption());
                 }));
 
+            // product select list
             base.rest.getProducts()
                 .then((function (products) {
                     products.map(product => new Option(product.productName,'#product').makeOption());
                 }));
+
+            $("button").click(function(){
+                const location = document.getElementById('location');
+                const product = document.getElementById('product');
+                let amount = document.getElementById('amount');
+
+                if(location.value === 'All Location'){
+                    alert("Please select location");
+                    return;
+                }else if(product.value === 'All Product'){
+                    alert("Please select product");
+                    return;
+                }else if(amount.value === ''){
+                    alert("Please input amount");
+                    return;
+                }
+
+                const postData = {"locationName":location.value, "productName":product.value, "amount":amount.value};
+                if(this.id === 'delete'){
+                    postData.amount = postData.amount * -1;
+                }
+
+                let total = table.row().data()[2];
+                if(this.id == 'delete' && amount.value > total){
+                    alert("Amount should be less than total");
+                    return;
+                }else{
+
+                    base.rest.addStock(postData)
+                        .then(function(stock) {
+                            if(stock !== null){
+                                controller.request();
+                            }
+                        });
+                }
+
+            });
         },
 
-        postStock: function() {
+        drawData: function(data){
+            model = data.map(d => new StockModel(d));
+            view.draw();
+        },
 
-            const location = document.getElementById('location');
-            const product = document.getElementById('product');
-            const inOut = document.getElementById('in-out');
-            const amount = document.getElementById('amount');
-            if(inOut.value === '-1'){
-                amount.value = (amount.value * -1);
-            }
-
-            const postData = {"locationName":location.value, "productName":product.value, "amount":amount.value};
-
-            base.rest.addStock(postData)
-                .then(function(stock) {
-                    if(inOut.value === '-1'){
-                        amount.value = (amount.value * -1);
-                    }
-                    const vm = new StockModel(stock);
-                    model.push(vm);          // append the foo to the end of the model array
-                    vm.drawTable(function () {});
-                });
-        }
     };
 
     return controller;

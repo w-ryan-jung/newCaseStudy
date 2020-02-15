@@ -67,16 +67,20 @@ CREATE TABLE stock(
     FOREIGN KEY(product_name) REFERENCES product(product_name)
 );
 
-CREATE TABLE balance(
-    location_name VARCHAR(20),
-    product_name VARCHAR(20),
-    total int NOT NULL,
-    CHECK (total > 0),
+INSERT INTO stock(user_id, location_name, product_name, amount, date) VALUES
+(1,'Cupertino','jTelefon',1000,1581794651104),
+(1,'Cupertino','jPlatta',1000,1581794651104),
+(1,'Cupertino','Päronklocka',1000,1581794651104),
+(1,'Norrköping','jTelefon',1000,1581794651104),
+(1,'Norrköping','jPlatta',1000,1581794651104),
+(1,'Norrköping','Päronklocka',1000,1581794651104),
+(1,'Frankurt','jTelefon',1000,1581794651104),
+(1,'Frankurt','jPlatta',1000,1581794651104),
+(1,'Frankurt','Päronklocka',1000,1581794651104);
 
-    PRIMARY KEY(location_name,product_name),
-    FOREIGN KEY(location_name) REFERENCES location(location_name),
-    FOREIGN KEY(product_name) REFERENCES product(product_name)
-);
+
+
+
 
 
 

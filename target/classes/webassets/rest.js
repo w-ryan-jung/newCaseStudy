@@ -218,6 +218,16 @@ base.rest = (function() {
                 .then(total => total.map(t => new Total(t)));
         },
 
+
+        getStocksBy: function(item){
+            return baseFetch('/rest/total',{
+                method:'POST',
+                body: JSON.stringify(item),
+                headers: jsonHeader})
+                .then(response => response.json())
+                .then(total => total.map(t => new Total(t)));
+        },
+
         getTotalByLocation: function(location){
             return baseFetch('/rest/total/location/' + location)
                 .then(response => response.json())

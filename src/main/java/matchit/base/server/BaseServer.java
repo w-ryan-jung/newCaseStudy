@@ -4,7 +4,6 @@ import matchit.base.server.database.CreateSchema;
 import org.eclipse.jetty.server.Handler;
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.ServerConnector;
 import org.eclipse.jetty.server.handler.AbstractHandler;
 import org.eclipse.jetty.server.handler.HandlerList;
 import org.eclipse.jetty.server.handler.ResourceHandler;
@@ -27,10 +26,14 @@ import java.io.OutputStream;
 public class BaseServer {
 
     public static void main(String[] args) {
+
+        System.out.println((long)System.currentTimeMillis());
+
         String databaseDriver = Config.instance().getDatabaseDriver();
         if (new CreateSchema(databaseDriver).createSchemaIfNotExists()) {
             StdErrLog.getLogger(BaseServer.class).info("Installed database to " + databaseDriver);
         }
+
 
         Server server = new Server(Config.instance().getPort());
 
@@ -53,11 +56,7 @@ public class BaseServer {
             server.destroy();
         }
 
-        ServerConnector connector = new ServerConnector(server);
-        connector.setPort(80);
-        connector.setHost("http://matchit.ga/");
-        connector.setIdleTimeout(30000);
-        server.addConnector(connector);
+
     }
 
     private static Handler indexHandler() {
@@ -106,3 +105,4 @@ public class BaseServer {
         return resources;
     }
 }
+
