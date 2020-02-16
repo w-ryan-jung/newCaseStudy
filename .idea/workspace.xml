@@ -3,20 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="eb2a18e3-8fc9-4314-86ff-9afef73b797f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/matchit/base/server/BaseServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/matchit/base/server/BaseServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/matchit/base/server/total/TotalDataAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/matchit/base/server/total/TotalDataAccess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/matchit/base/server/total/TotalResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/matchit/base/server/total/TotalResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/matchit/base/server/database/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/matchit/base/server/database/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/rest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/rest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/stock/stock.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/stock/stock.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/webassets/stock/stock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webassets/stock/stock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/BaseServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/BaseServer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/BaseServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/BaseServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/database/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/database/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webassets/rest.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/rest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webassets/stock/stock.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/stock/stock.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webassets/stock/stock.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webassets/stock/stock.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,6 +157,7 @@
       <workItem from="1581581787765" duration="6657000" />
       <workItem from="1581700601196" duration="13931000" />
       <workItem from="1581764832964" duration="10077000" />
+      <workItem from="1581850831416" duration="250000" />
     </task>
     <servers />
   </component>
@@ -217,42 +205,46 @@
       <screen x="0" y="23" width="2560" height="1347" />
     </state>
     <state x="1018" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581426170207" />
-    <state width="2518" height="632" key="GridCell.Tab.0.bottom" timestamp="1581801847506">
+    <state width="2506" height="632" key="GridCell.Tab.0.bottom" timestamp="1581851226125">
       <screen x="0" y="23" width="2560" height="1347" />
     </state>
     <state width="1228" height="422" key="GridCell.Tab.0.bottom/0.0.2560.1440/-1080.0.1080.1920@0.0.2560.1440" timestamp="1581374465685" />
     <state width="1238" height="181" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1581594959941" />
     <state width="1238" height="181" key="GridCell.Tab.0.bottom/0.23.1280.733@0.23.1280.733" timestamp="1581602975458" />
     <state width="1038" height="886" key="GridCell.Tab.0.bottom/0.23.2560.1347/-1080.23.1080.1897@-1080.23.1080.1897" timestamp="1581793046217" />
-    <state width="2518" height="632" key="GridCell.Tab.0.bottom/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581801847506" />
-    <state width="2518" height="632" key="GridCell.Tab.0.center" timestamp="1581801847505">
+    <state width="2506" height="632" key="GridCell.Tab.0.bottom/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581851226125" />
+    <state width="2506" height="632" key="GridCell.Tab.0.center" timestamp="1581851226124">
       <screen x="0" y="23" width="2560" height="1347" />
     </state>
     <state width="1228" height="422" key="GridCell.Tab.0.center/0.0.2560.1440/-1080.0.1080.1920@0.0.2560.1440" timestamp="1581374465683" />
     <state width="1238" height="181" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1581594959940" />
     <state width="1238" height="181" key="GridCell.Tab.0.center/0.23.1280.733@0.23.1280.733" timestamp="1581602975455" />
     <state width="1038" height="886" key="GridCell.Tab.0.center/0.23.2560.1347/-1080.23.1080.1897@-1080.23.1080.1897" timestamp="1581793046216" />
-    <state width="2518" height="632" key="GridCell.Tab.0.center/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581801847505" />
-    <state width="2518" height="632" key="GridCell.Tab.0.left" timestamp="1581801847504">
+    <state width="2506" height="632" key="GridCell.Tab.0.center/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581851226124" />
+    <state width="2506" height="632" key="GridCell.Tab.0.left" timestamp="1581851226124">
       <screen x="0" y="23" width="2560" height="1347" />
     </state>
     <state width="1228" height="422" key="GridCell.Tab.0.left/0.0.2560.1440/-1080.0.1080.1920@0.0.2560.1440" timestamp="1581374465682" />
     <state width="1238" height="181" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1581594959940" />
     <state width="1238" height="181" key="GridCell.Tab.0.left/0.23.1280.733@0.23.1280.733" timestamp="1581602975455" />
     <state width="1038" height="886" key="GridCell.Tab.0.left/0.23.2560.1347/-1080.23.1080.1897@-1080.23.1080.1897" timestamp="1581793046215" />
-    <state width="2518" height="632" key="GridCell.Tab.0.left/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581801847504" />
-    <state width="2518" height="632" key="GridCell.Tab.0.right" timestamp="1581801847505">
+    <state width="2506" height="632" key="GridCell.Tab.0.left/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581851226124" />
+    <state width="2506" height="632" key="GridCell.Tab.0.right" timestamp="1581851226125">
       <screen x="0" y="23" width="2560" height="1347" />
     </state>
     <state width="1228" height="422" key="GridCell.Tab.0.right/0.0.2560.1440/-1080.0.1080.1920@0.0.2560.1440" timestamp="1581374465684" />
     <state width="1238" height="181" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1581594959941" />
     <state width="1238" height="181" key="GridCell.Tab.0.right/0.23.1280.733@0.23.1280.733" timestamp="1581602975457" />
     <state width="1038" height="886" key="GridCell.Tab.0.right/0.23.2560.1347/-1080.23.1080.1897@-1080.23.1080.1897" timestamp="1581793046216" />
-    <state width="2518" height="632" key="GridCell.Tab.0.right/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581801847505" />
+    <state width="2506" height="632" key="GridCell.Tab.0.right/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581851226125" />
     <state x="818" y="358" key="Maven.ArtifactSearchDialog" timestamp="1581634743516">
       <screen x="0" y="23" width="2560" height="1347" />
     </state>
     <state x="818" y="358" key="Maven.ArtifactSearchDialog/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581634743516" />
+    <state x="975" y="529" key="com.intellij.ide.util.TipDialog" timestamp="1581850838679">
+      <screen x="0" y="23" width="2560" height="1347" />
+    </state>
+    <state x="975" y="529" key="com.intellij.ide.util.TipDialog/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581850838679" />
     <state x="1585" y="330" width="670" height="676" key="search.everywhere.popup" timestamp="1581404681961">
       <screen x="0" y="23" width="2560" height="1347" />
     </state>

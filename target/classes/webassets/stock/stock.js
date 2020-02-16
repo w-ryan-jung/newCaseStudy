@@ -55,10 +55,7 @@ base.stockController = function() {
                     if(stocks.length > 0){
                         table.clear().draw();
                         controller.drawData(stocks);
-                    }else{
-                        alert("No data");
                     }
-
                 });
         },
 
@@ -91,7 +88,8 @@ base.stockController = function() {
                     products.map(product => new Option(product.productName,'#product').makeOption());
                 }));
 
-            $("button").click(function(){
+            $("button").click(function(event){
+                event.preventDefault();
                 const location = document.getElementById('location');
                 const product = document.getElementById('product');
                 let amount = document.getElementById('amount');
