@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eb2a18e3-8fc9-4314-86ff-9afef73b797f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/BaseServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/BaseServer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/BaseServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/BaseServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/database/CreateSchema.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/database/CreateSchema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/database/DataAccess$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/database/DataAccess$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/database/DataAccess$UncheckedCloseable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/database/DataAccess$UncheckedCloseable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/database/DataAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/database/DataAccess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/database/DataAccessException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/database/DataAccessException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/database/ErrorType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/database/ErrorType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/database/MapMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/database/MapMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/database/Mapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/database/Mapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/location/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/location/Location.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/location/LocationDataAccess$LocationMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/location/LocationDataAccess$LocationMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/location/LocationDataAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/location/LocationDataAccess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/location/LocationResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/location/LocationResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/product/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/product/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/product/ProductDataAccess$ProductMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/product/ProductDataAccess$ProductMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/product/ProductDataAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/product/ProductDataAccess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/product/ProductResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/product/ProductResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/providers/AuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/providers/AuthenticationFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/providers/JsonExceptionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/providers/JsonExceptionMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/providers/JsonProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/providers/JsonProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/stock/Stock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/stock/Stock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/stock/StockDataAccess$StockMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/stock/StockDataAccess$StockMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/stock/StockDataAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/stock/StockDataAccess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/stock/StockResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/stock/StockResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/total/Total.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/total/Total.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/total/TotalDataAccess$BalanceMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/total/TotalDataAccess$BalanceMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/total/TotalDataAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/total/TotalDataAccess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/total/TotalResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/total/TotalResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/user/Credentials.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/user/Credentials.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/user/Role$Names.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/user/Role$Names.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/user/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/user/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/user/Session.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/user/Session.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/user/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/user/UserDataAccess$UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/user/UserDataAccess$UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/user/UserDataAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/user/UserDataAccess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/matchit/base/server/user/UserResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/matchit/base/server/user/UserResource.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Xd1flbRPeZuWWjea5kQF9wmCeY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../Library/Android/sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="JUnit.UserResourceTest">
+    <configuration name="CredentialsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="casestudyproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="matchit.base.server.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="matchit.base.server.user" />
+      <option name="MAIN_CLASS_NAME" value="matchit.base.server.user.CredentialsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TotalDataAccessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="casestudyproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="matchit.base.server.total.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="matchit.base.server.total" />
+      <option name="MAIN_CLASS_NAME" value="matchit.base.server.total.TotalDataAccessTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TotalResourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="casestudyproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="matchit.base.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="matchit.base.server.total" />
+      <option name="MAIN_CLASS_NAME" value="matchit.base.server.TotalResourceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDataAccessTest.addNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="casestudyproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="matchit.base.server.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="matchit.base.server.user" />
+      <option name="MAIN_CLASS_NAME" value="matchit.base.server.user.UserDataAccessTest" />
+      <option name="METHOD_NAME" value="addNewUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserResourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="casestudyproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="matchit.base.server.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="matchit.base.server.user" />
+      <option name="MAIN_CLASS_NAME" value="matchit.base.server.user.UserResourceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.TotalDataAccessTest" />
+      <item itemvalue="JUnit.TotalResourceTest" />
+      <item itemvalue="JUnit.CredentialsTest" />
+      <item itemvalue="JUnit.UserDataAccessTest.addNewUser" />
+      <item itemvalue="JUnit.UserResourceTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserResourceTest" />
+        <item itemvalue="JUnit.UserDataAccessTest.addNewUser" />
+        <item itemvalue="JUnit.CredentialsTest" />
+        <item itemvalue="JUnit.TotalResourceTest" />
+        <item itemvalue="JUnit.TotalDataAccessTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eb2a18e3-8fc9-4314-86ff-9afef73b797f" name="Default Changelist" comment="" />
+      <created>1581361262891</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581361262891</updated>
+      <workItem from="1581361266125" duration="442000" />
+      <workItem from="1581799086135" duration="99000" />
+      <workItem from="1581799261943" duration="167000" />
+      <workItem from="1581799977808" duration="214000" />
+      <workItem from="1581808014658" duration="394000" />
+      <workItem from="1581808484301" duration="896000" />
+      <workItem from="1581809551497" duration="443000" />
+      <workItem from="1581811714883" duration="125000" />
+      <workItem from="1581852353364" duration="413000" />
+      <workItem from="1581852904150" duration="446000" />
+      <workItem from="1581954844490" duration="25000" />
+      <workItem from="1582110065279" duration="425000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="595" y="133" width="803" height="846" key="#BaseServer" timestamp="1582034900239">
+      <screen x="83" y="34" width="1837" height="1046" />
+    </state>
+    <state x="595" y="133" width="803" height="846" key="#BaseServer/83.34.1837.1046@83.34.1837.1046" timestamp="1582034900239" />
+    <state x="595" y="133" width="803" height="846" key="#CreateSchema" timestamp="1582034872524">
+      <screen x="83" y="34" width="1837" height="1046" />
+    </state>
+    <state x="595" y="133" width="803" height="846" key="#CreateSchema/83.34.1837.1046@83.34.1837.1046" timestamp="1582034872524" />
+    <state x="209" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582110079109">
+      <screen x="0" y="23" width="1280" height="733" />
+    </state>
+    <state x="209" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.733@0.23.1280.733" timestamp="1582110079109" />
+    <state x="744" y="358" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581809050284" />
+    <state width="1238" height="176" key="GridCell.Tab.0.bottom" timestamp="1582114401910">
+      <screen x="0" y="23" width="1280" height="733" />
+    </state>
+    <state width="1238" height="176" key="GridCell.Tab.0.bottom/0.23.1280.733@0.23.1280.733" timestamp="1582114401910" />
+    <state width="2506" height="632" key="GridCell.Tab.0.bottom/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581853351011" />
+    <state width="1781" height="263" key="GridCell.Tab.0.bottom/83.34.1837.1046@83.34.1837.1046" timestamp="1582107271247" />
+    <state width="1238" height="176" key="GridCell.Tab.0.center" timestamp="1582114401910">
+      <screen x="0" y="23" width="1280" height="733" />
+    </state>
+    <state width="1238" height="176" key="GridCell.Tab.0.center/0.23.1280.733@0.23.1280.733" timestamp="1582114401910" />
+    <state width="2506" height="632" key="GridCell.Tab.0.center/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581853351010" />
+    <state width="1781" height="263" key="GridCell.Tab.0.center/83.34.1837.1046@83.34.1837.1046" timestamp="1582107271246" />
+    <state width="1238" height="176" key="GridCell.Tab.0.left" timestamp="1582114401909">
+      <screen x="0" y="23" width="1280" height="733" />
+    </state>
+    <state width="1238" height="176" key="GridCell.Tab.0.left/0.23.1280.733@0.23.1280.733" timestamp="1582114401909" />
+    <state width="2506" height="632" key="GridCell.Tab.0.left/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581853351010" />
+    <state width="1781" height="263" key="GridCell.Tab.0.left/83.34.1837.1046@83.34.1837.1046" timestamp="1582107271246" />
+    <state width="1238" height="176" key="GridCell.Tab.0.right" timestamp="1582114401910">
+      <screen x="0" y="23" width="1280" height="733" />
+    </state>
+    <state width="1238" height="176" key="GridCell.Tab.0.right/0.23.1280.733@0.23.1280.733" timestamp="1582114401910" />
+    <state width="2506" height="632" key="GridCell.Tab.0.right/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581853351011" />
+    <state width="1781" height="263" key="GridCell.Tab.0.right/83.34.1837.1046@83.34.1837.1046" timestamp="1582107271247" />
+    <state width="1781" height="327" key="GridCell.Tab.1.bottom" timestamp="1582107047430">
+      <screen x="83" y="34" width="1837" height="1046" />
+    </state>
+    <state width="1781" height="327" key="GridCell.Tab.1.bottom/83.34.1837.1046@83.34.1837.1046" timestamp="1582107047430" />
+    <state width="1781" height="327" key="GridCell.Tab.1.center" timestamp="1582107047428">
+      <screen x="83" y="34" width="1837" height="1046" />
+    </state>
+    <state width="1781" height="327" key="GridCell.Tab.1.center/83.34.1837.1046@83.34.1837.1046" timestamp="1582107047428" />
+    <state width="1781" height="327" key="GridCell.Tab.1.left" timestamp="1582107047428">
+      <screen x="83" y="34" width="1837" height="1046" />
+    </state>
+    <state width="1781" height="327" key="GridCell.Tab.1.left/83.34.1837.1046@83.34.1837.1046" timestamp="1582107047428" />
+    <state width="1781" height="327" key="GridCell.Tab.1.right" timestamp="1582107047429">
+      <screen x="83" y="34" width="1837" height="1046" />
+    </state>
+    <state width="1781" height="327" key="GridCell.Tab.1.right/83.34.1837.1046@83.34.1837.1046" timestamp="1582107047429" />
+    <state x="770" y="486" width="453" height="140" key="ReplaceDuplicatesPrompt" timestamp="1582054611137">
+      <screen x="83" y="34" width="1837" height="1046" />
+    </state>
+    <state x="770" y="486" width="453" height="140" key="ReplaceDuplicatesPrompt/83.34.1837.1046@83.34.1837.1046" timestamp="1582054611137" />
+    <state x="256" y="23" width="1280" height="1046" key="SettingsEditor" timestamp="1582110100660">
+      <screen x="0" y="23" width="1280" height="733" />
+    </state>
+    <state x="256" y="23" key="SettingsEditor/0.23.1280.733@0.23.1280.733" timestamp="1582110100660" />
+    <state x="770" y="278" key="SettingsEditor/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581852548677" />
+    <state x="450" y="34" width="1280" height="1046" key="SettingsEditor/83.34.1837.1046@83.34.1837.1046" timestamp="1582107574267" />
+    <state x="781" y="427" key="com.intellij.ide.util.TipDialog" timestamp="1582107596005">
+      <screen x="83" y="34" width="1837" height="1046" />
+    </state>
+    <state x="973" y="529" key="com.intellij.ide.util.TipDialog/0.23.2560.1347/-1080.23.1080.1897@0.23.2560.1347" timestamp="1581811716405" />
+    <state x="781" y="427" key="com.intellij.ide.util.TipDialog/83.34.1837.1046@83.34.1837.1046" timestamp="1582107596005" />
+    <state x="669" y="246" width="680" height="619" key="extract.method.dialog" timestamp="1582054594072">
+      <screen x="83" y="34" width="1837" height="1046" />
+    </state>
+    <state x="669" y="246" width="680" height="619" key="extract.method.dialog/83.34.1837.1046@83.34.1837.1046" timestamp="1582054594072" />
+  </component>
+</project>

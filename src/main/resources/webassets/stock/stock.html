@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock</title>
+</head>
+<h1 class="d-sm-block d-none">Manage Stock</h1>
+<p><em>Employees</em> can manage stock. Beyond that, employees are also able to see current inventory balances
+</p>
+
+<div class="container-md">
+    <form id="form">
+        <div class="container p-3 my-3 border">
+            <select id = "location" class="browser-default custom-select">
+                <option selected>All Location</option>
+            </select><br><br>
+
+            <select id = "product" class="browser-default custom-select">
+                <option selected>All Product</option>
+            </select><br><br>
+
+            <input id = "amount" class="form-control" type="text" placeholder="Amount"><br>
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <button id="add" class="form-control btn btn-primary" type="submit">Add</button>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <button id="delete" class="form-control btn btn-danger" type="submit">Remove</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="mt-5">
+    <div class="container">
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead align="center" class = "thead-light">
+            <tr>
+                <th scope="col">Location</th>
+                <th scope="col">Product</th>
+                <th scope="col">Amount</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="center"></td>
+                    <td align="center"></td>
+                    <td align="center"></td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br><br><br>
+
+    </div>
+</div>
+
