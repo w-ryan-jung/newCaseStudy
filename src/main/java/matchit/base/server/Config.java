@@ -10,7 +10,7 @@ package matchit.base.server;
  */
 public class Config {
 
-    private static final int DEFAULT_PORT = 8080;
+    private static final int DEFAULT_PORT = 9000;
     private static final String DEFAULT_DATABASE_DRIVER = "jdbc:h2:~/base-server/data";
 
     private static final Config INSTANCE = new Config(
